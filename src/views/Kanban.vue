@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import Kanban from '@/views/Kanban.vue';
+
 </script>
 
 <template>
- <Kanban/>
+ Kanban
 </template>
 
 <style scoped>
