@@ -1,0 +1,56 @@
+@import './base.css';
+
+@keyframes clickable {
+  0% {
+    transform: scale(1.0);
+  }
+  25% {
+    transform: scale(0.98);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes clickable2 {
+  0% {
+    transform: scale(1.0);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+.clickable,
+button {
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.5);
+  }
+
+  &:active {
+    animation: clickable 0.5s ease-in-out;
+  }
+}
+
+.taskform button,
+button.taskform {
+  padding: var(--space2) var(--space3);
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
