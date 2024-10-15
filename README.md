@@ -1,33 +1,12 @@
-# mstomatao-10152024
+## This app uses H2Database
 
-This template should help get you started developing with Vue 3 in Vite.
+### To run this app, kindly open two terminals having the same path as this file.
 
-## Recommended IDE Setup
+### In the first terminal, run the command below:
+`npm run server`
+-- Before running the next command, kindly open in the browser `http://localhost:9000/` to initialize the Database
+-- Expect that after initializing the database, it will show `TO DO: Action not implemented yet.` When it appears, the server is already ok.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+### In the second terminal, run the command below:
+`npm run client`
+-- You may now open the app in `http://localhost:5173/`
